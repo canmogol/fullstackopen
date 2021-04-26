@@ -1,2 +1,16 @@
-# fullstackopen
-Deep Dive Into Modern Web Development Full Stack open 2021
+# Full Stack Open 2021 Course
+
+Deep Dive Into Modern Web Development Full Stack Open 2021 course exercises.
+
+## Part0
+
+This chapter contains the general information about course content and fundamentals of Web applications.
+
+### 0.4: new note
+
+```
+Create a similar diagram depicting the situation where the user creates a new note on page https://studies.cs.helsinki.fi/exampleapp/notes by writing something into the text field and clicking the submit button.
+```
+
+![Sequence Diagram for Posting on notes endpoint](https://www.websequencediagrams.com/cgi-bin/cdraw?lz=bm90ZSBvdmVyIGJyb3dzZXI6CndoZW4gY2xpY2tpbmcgb24gdGhlIHN1Ym1pdCBidXR0b24sCgAmByBzZW5kcwAcBWZvcm0gZGF0YSBjb250YWluaW5nIAp0aGUgJ25vdGUnIGlucHV0IGZpZWxkJ3MgdmFsdWUuCmVuZCBub3RlCgBKCC0-c2VydmVyOiBIVFRQIFBPU1QgaHR0cHM6Ly9zdHVkaWVzLmNzLmhlbHNpbmtpLmZpL2V4YW1wbGVhcHAvbmV3XwBJBgCBTgoASQcKAFIGIGNyZWF0ZXMgYQBzBSBvYmplY3Qgd2l0aACBYwUAgSYHAIEaBSAKYW5kIGN1cnJlbnQgZGF0ZSwgYW5kIGFkZHMgaXQgdG8AKwhkZXMnIGFycmF5LApyZXR1cm5zIGEgMzAyIHJlZGlyZWN0IHJlc3BvbnNlIHRvIACBJg1vdGVzAIF9DACBegYtLT4AgwkIAIIEBjMwMiBSAEUIADAUAIFoDACDQwkAgyAIZ2V0AIMhBgCAfxEAgV8FAINBBmEgR0VUAEYWAIMIIEdFAIJ6LQCBKwUAgVUUTUwtY29kACBHbWFpbi5jcwBWFAASCQAfSmoATxlqAIJ-HnN0YXJ0cyBleGVjdXRpbmcganMAgX8GdGhhdCByZXF1ZXN0cyBKU09OAIZbBmZyb20AhVAHIACCS09kYXRhLmpzb24AhHQTW3sAh1YFZW50OiAiSFRNTCBpcyBlYXN5IiwAhhgFOiAiMjAxOS0wNS0yMyIgfSwgLi4uXQCEeh0AgW4GZQCIPAZldmVudCBoYW5kbGVyAIF1CG5kZXJzAIgeBXMgdG8gZGlzcGxheQCILgo&s=default "Sequence Diagram")
+
