@@ -1,0 +1,47 @@
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+server-->browser: HTML-code
+
+note over browser:
+browser starts rendering the HTML, finds the 'link' and 'script' tags.
+- sends a request to the 'link' URL to get the CSS.
+- sends a request to the 'script' URL to get the JS.
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+
+browser->server: HTTP https://studies.cs.helsinki.fi/exampleapp/spa.js
+server-->browser: spa.js
+
+note over browser:
+browser starts executing js-code that
+- sends a request to get the notes from server and registers an 
+event handler to handle the response.
+- registers an event handler to the form to handle the form submit.
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: [{ content: "HTML is easy", date: "2019-05-23" }, ...]
+
+note over browser:
+JavaScript event handler handles the response,
+- assigns the response notes to local notes list and 
+- draws the list of notes on the page.
+end note
+
+
+note over browser:
+When the user presses the 'save' button, JavaScript handles the form submit event;
+- prevents the form from posting the data, 
+- creates a new note object on the frontend, adds to the client-side notes list,
+- redraws the note list on the page,
+- sends a POST request using an XMLHttpRequest and registers an event handler for response.
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: HTTP 201 {"message":"note created"}
+
+note over browser:
+The browser logs the response message if the response code is 201 in the event handler.
+end note
