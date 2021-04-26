@@ -1,0 +1,15 @@
+note over browser:
+when clicking on the submit button, JavaScript form submit event handler 
+- prevents the form from posting the data, 
+- creates a new note object on the frontend, adds to the client-side notes list,
+- clears the 'note' input's text
+- redraws the note list on the page,
+- sends a POST request using an XMLHttpRequest and registers an event handler for response.
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: HTTP 201 {"message":"note created"}
+
+note over browser:
+The browser logs the response message if the response code is 201 in the event handler.
+end note

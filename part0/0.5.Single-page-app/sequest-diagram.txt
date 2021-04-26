@@ -29,19 +29,3 @@ JavaScript event handler handles the response,
 - assigns the response notes to local notes list and 
 - draws the list of notes on the page.
 end note
-
-
-note over browser:
-When the user presses the 'save' button, JavaScript handles the form submit event;
-- prevents the form from posting the data, 
-- creates a new note object on the frontend, adds to the client-side notes list,
-- redraws the note list on the page,
-- sends a POST request using an XMLHttpRequest and registers an event handler for response.
-end note
-
-browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
-server-->browser: HTTP 201 {"message":"note created"}
-
-note over browser:
-The browser logs the response message if the response code is 201 in the event handler.
-end note
